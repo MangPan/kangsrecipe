@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Generated Recipe</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="recipe-container">
+        <h1>by 2025810083 강민준</h1>
+        <h2>Your Recipe:</h2>
+
+        <div class="recipe-content">
+            {{ recipe | safe }}
+        </div>
+
+        <a href="/">Generate another recipe</a>
+    </div>
+</body>
+</html>
